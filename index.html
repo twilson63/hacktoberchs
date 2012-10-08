@@ -26,9 +26,11 @@
         <section class="span6">
           <textarea id="code" ui-codemirror="{theme:'monokai'}" ng-model="code"></textarea>
         </section>
+        <section class="row" style="margin-top: 25px;">
+          <button class="btn" ng-click="run()">Run Test</button>
+        </section>
       </section>
-      <section class="row" style="margin-top: 25px;" ng-controller="PreviewCtrl">
-        <button class="btn">Run Test</button>
+      <section class="row" ng-controller="PreviewCtrl">
         <iframe id="preview" my-iframe="preview" style="margin-top: 25px;"></iframe>
       </section>
     </section>
