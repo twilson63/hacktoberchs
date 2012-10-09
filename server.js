@@ -3,7 +3,7 @@ var flatiron = require('flatiron'),
   ejs = require('ejs'),
   es = require('event-stream'),
   request = require('request'),
-  index = fs.readFileSync('./views/index.html.ejs').toString(),
+  fs = require('fs'),
   template = fs.readFileSync('./views/template.html.ejs').toString(),
   app = flatiron.app;
 
