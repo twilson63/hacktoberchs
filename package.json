@@ -1,0 +1,25 @@
+{
+  "name": "testdrive",
+  "version": "0.0.1",
+  "description": "ERROR: No README.md file found!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twilson63/hacktoberchs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "flatiron": "~0.2.8",
+    "union": "~0.3.4",
+    "ecstatic": "~0.1.6",
+    "ejs": "~0.8.3",
+    "event-stream": "~3.0.7",
+    "filed": "0.0.7",
+    "request": "~2.11.4"
+  }
+}
