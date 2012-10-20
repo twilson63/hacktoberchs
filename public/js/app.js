@@ -7,19 +7,22 @@ function MainCtrl($scope, $http) {
   
   // run test function
   $scope.run = function() {
+    eval($scope.test);
+    eval($scope.code);
+    console.log(jasmine.getEnv().execute());
     // show loading...
-    $scope.page = '/loading.html';
-    var cmd = '/run', data = { test: $scope.test, code: $scope.code};
-    // if update mode set id and rev
-    if ($scope.id) { 
-      cmd = cmd + '/' + $scope.id;
-      data._rev = $scope.rev;
-    }
-    // post to server
-    $http.post(cmd, data).success(function(data){
-      $scope.id = data.id;
-      $scope.rev = data.rev;
-      $scope.page = '/runner/' + data.id;
-    });
+    // $scope.page = '/loading.html';
+    // var cmd = '/run', data = { test: $scope.test, code: $scope.code};
+    // // if update mode set id and rev
+    // if ($scope.id) { 
+    //   cmd = cmd + '/' + $scope.id;
+    //   data._rev = $scope.rev;
+    // }
+    // // post to server
+    // $http.post(cmd, data).success(function(data){
+    //   $scope.id = data.id;
+    //   $scope.rev = data.rev;
+    //   $scope.page = '/runner/' + data.id;
+    // });
   }
 }
