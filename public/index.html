@@ -29,17 +29,19 @@
       <section class="row">
         <section class="span6">
           <h2>Test</h2>
-          <textarea id="test" ui-codemirror="{theme:'monokai'}" ng-model="test"></textarea>
+          <textarea ng-change="testChg()" id="test" ui-codemirror="{theme:'monokai'}" ng-model="test"></textarea>
         </section>
         <section class="span6">
           <h2>Code</h2>
-          <textarea id="code" ui-codemirror="{theme:'monokai'}" ng-model="code"></textarea>
+          <textarea ng-change="codeChg()" id="code" ui-codemirror="{theme:'monokai'}" ng-model="code"></textarea>
         </section>
       </section>
     </section>
     </div>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/angular.min.js"></script>
+    
     <script src="/js/angular-ui.min.js"></script>
     <script src="/js/codemirror.js"></script>
     <script src="/js/javascript.js"></script>

@@ -17,9 +17,6 @@
     "flatiron": "~0.2.8",
     "union": "~0.3.4",
     "ecstatic": "~0.1.6",
-    "ejs": "~0.8.3",
-    "event-stream": "~3.0.7",
-    "filed": "0.0.7",
-    "request": "~2.11.4"
+    "socket.io": "~0.9.10"
   }
 }

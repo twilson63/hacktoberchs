@@ -6,7 +6,6 @@ The application consists of two code windows and a test runner preview pane.  Th
 
 ## Requirements
 
-* CouchDb
 * NodeJs
 * HTML5 Browser
 
