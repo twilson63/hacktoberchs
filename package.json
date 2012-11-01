@@ -18,5 +18,9 @@
     "union": "~0.3.4",
     "ecstatic": "~0.1.6",
     "socket.io": "~0.9.10"
+  },
+  "subdomain": "testdrive",
+  "engines": {
+    "node": "0.8.x"
   }
 }
